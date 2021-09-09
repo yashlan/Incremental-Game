@@ -49,6 +49,7 @@ public class ResourceController : MonoBehaviour
     {
         double upgradeCost = GetUpgradeCost();
         GameManager.Instance.SpendGoldToUpgrade(upgradeCost, IsUpgrade => {
+
             if (IsUpgrade)
             {
                 _level++;
@@ -62,9 +63,11 @@ public class ResourceController : MonoBehaviour
     {
         double unlockCost = GetUnlockCost();
         GameManager.Instance.SpendGoldToUnlock(unlockCost, IsUnlocked => {
+
             if (IsUnlocked)
             {
                 SetUnlocked(true);
+                AchievementController.Instance.UnlockAchievement(AchievementType.UnlockResource, _config.Name);
                 GameManager.Instance.ShowNextResource();
             }
         });

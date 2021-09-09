@@ -173,7 +173,7 @@ public class GameManager : MonoBehaviour
         tapText.transform.SetParent(parent, false);
         tapText.transform.position = tapPosition;
 
-        tapText.text = $"+{ output:0}";
+        tapText.Text = $"+{ output:0}";
         tapText.gameObject.SetActive(true);
         _coinIcon.transform.localScale = Vector3.one * 1.4f;
 

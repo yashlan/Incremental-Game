@@ -3,12 +3,14 @@ using UnityEngine.UI;
 
 public class TapText : MonoBehaviour
 {
-    public float SpawnTime = 0.5f;
+    [SerializeField]
     private float _spawnTime;
-
     [SerializeField]
     private Text _tapText;
-    public string text {
+
+    public float SpawnTime = 0.5f;
+    public string Text
+    {
         get => _tapText.text;
         set => _tapText.text = value;
     }  
