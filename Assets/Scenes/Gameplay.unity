@@ -717,7 +717,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 693587922}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1011,22 +1011,187 @@ MonoBehaviour:
   _popUpTransform: {fileID: 619406564}
   _popUpText: {fileID: 547929897}
   _popUpShowDuration: 3
-  _achievementList:
-  - Title: Unlock Click
+  _achievementUnlockResourceList:
+  - Title: Click Unlocked
     Type: 0
     Value: Click
     IsUnlocked: 0
-  - Title: Unlock Pegawai Magang
+  - Title: Pegawai Magang Unlocked
     Type: 0
     Value: Pegawai Magang
     IsUnlocked: 0
-  - Title: Unlock Pegawai Tetap
+  - Title: Pegawai Tetap Unlocked
     Type: 0
     Value: Pegawai Tetap
     IsUnlocked: 0
-  - Title: Unlock Manager
+  - Title: Manager Unlocked
     Type: 0
     Value: Manager
+    IsUnlocked: 0
+  _achievementClickUnlockList:
+  - Title: Click Reached Level 10
+    Level: 10
+    IsUnlocked: 0
+  - Title: Click Reached Level 20
+    Level: 20
+    IsUnlocked: 0
+  - Title: Click Reached Level 30
+    Level: 30
+    IsUnlocked: 0
+  - Title: Click Reached Level 40
+    Level: 40
+    IsUnlocked: 0
+  - Title: Click Reached Level 50
+    Level: 50
+    IsUnlocked: 0
+  - Title: Click Reached Level 60
+    Level: 60
+    IsUnlocked: 0
+  - Title: Click Reached Level 70
+    Level: 70
+    IsUnlocked: 0
+  - Title: Click Reached Level 80
+    Level: 80
+    IsUnlocked: 0
+  - Title: Click Reached Level 90
+    Level: 90
+    IsUnlocked: 0
+  - Title: Click Reached Level 100
+    Level: 100
+    IsUnlocked: 0
+  _achievementPegawaiMagangUnlockLevelList:
+  - Title: Pegawai Magang Reached Level 10
+    Level: 10
+    IsUnlocked: 0
+  - Title: Pegawai Magang Reached Level 20
+    Level: 20
+    IsUnlocked: 0
+  - Title: Pegawai Magang Reached Level 30
+    Level: 30
+    IsUnlocked: 0
+  - Title: Pegawai Magang Reached Level 40
+    Level: 40
+    IsUnlocked: 0
+  - Title: Pegawai Magang Reached Level 50
+    Level: 50
+    IsUnlocked: 0
+  - Title: Pegawai Magang Reached Level 60
+    Level: 60
+    IsUnlocked: 0
+  - Title: Pegawai Magang Reached Level 70
+    Level: 70
+    IsUnlocked: 0
+  - Title: Pegawai Magang Reached Level 80
+    Level: 80
+    IsUnlocked: 0
+  - Title: Pegawai Magang Reached Level 90
+    Level: 90
+    IsUnlocked: 0
+  - Title: Pegawai Magang Reached Level 100
+    Level: 100
+    IsUnlocked: 0
+  _achievementPegawaiTetapUnlockLevelList:
+  - Title: Pegawai Tetap Reached Level 10
+    Level: 10
+    IsUnlocked: 0
+  - Title: Pegawai Tetap Reached Level 20
+    Level: 20
+    IsUnlocked: 0
+  - Title: Pegawai Tetap Reached Level 30
+    Level: 30
+    IsUnlocked: 0
+  - Title: Pegawai Tetap Reached Level 40
+    Level: 40
+    IsUnlocked: 0
+  - Title: Pegawai Tetap Reached Level 50
+    Level: 50
+    IsUnlocked: 0
+  - Title: Pegawai Tetap Reached Level 60
+    Level: 60
+    IsUnlocked: 0
+  - Title: Pegawai Tetap Reached Level 70
+    Level: 70
+    IsUnlocked: 0
+  - Title: Pegawai Tetap Reached Level 80
+    Level: 80
+    IsUnlocked: 0
+  - Title: Pegawai Tetap Reached Level 90
+    Level: 90
+    IsUnlocked: 0
+  - Title: Pegawai Tetap Reached Level 100
+    Level: 100
+    IsUnlocked: 0
+  _achievementManagerUnlockLevelList:
+  - Title: Manager Reached Level 10
+    Level: 10
+    IsUnlocked: 0
+  - Title: Manager Reached Level 20
+    Level: 20
+    IsUnlocked: 0
+  - Title: Manager Reached Level 30
+    Level: 30
+    IsUnlocked: 0
+  - Title: Manager Reached Level 40
+    Level: 40
+    IsUnlocked: 0
+  - Title: Manager Reached Level 50
+    Level: 50
+    IsUnlocked: 0
+  - Title: Manager Reached Level 60
+    Level: 60
+    IsUnlocked: 0
+  - Title: Manager Reached Level 70
+    Level: 70
+    IsUnlocked: 0
+  - Title: Manager Reached Level 80
+    Level: 80
+    IsUnlocked: 0
+  - Title: Manager Reached Level 90
+    Level: 90
+    IsUnlocked: 0
+  - Title: Manager Reached Level 100
+    Level: 100
+    IsUnlocked: 0
+  _achievementReachedGoldList:
+  - type: 1
+    Title: You Reached 100K Gold
+    Gold: 100000
+    IsUnlocked: 0
+  - type: 2
+    Title: You Reached 500K Gold
+    Gold: 500000
+    IsUnlocked: 0
+  - type: 3
+    Title: You Reached 1M Gold
+    Gold: 1000000
+    IsUnlocked: 0
+  - type: 4
+    Title: You Reached 5M Gold
+    Gold: 5000000
+    IsUnlocked: 0
+  - type: 5
+    Title: You Reached 10M Gold
+    Gold: 10000000
+    IsUnlocked: 0
+  - type: 6
+    Title: You Reached 50M Gold
+    Gold: 50000000
+    IsUnlocked: 0
+  - type: 7
+    Title: You Reached 100M Gold
+    Gold: 100000000
+    IsUnlocked: 0
+  - type: 8
+    Title: You Reached 500M Gold
+    Gold: 500000000
+    IsUnlocked: 0
+  - type: 9
+    Title: You Reached 1B Gold
+    Gold: 1000000000
+    IsUnlocked: 0
+  - type: 10
+    Title: You Reached 100B Gold
+    Gold: 100000000000
     IsUnlocked: 0
 --- !u!1 &693587921
 GameObject:
@@ -1234,6 +1399,7 @@ MonoBehaviour:
   _coinIcon: {fileID: 414226561}
   _goldInfo: {fileID: 567455399}
   _autoCollectInfo: {fileID: 1984738259}
+  _totalGold: 0
 --- !u!4 &1098056942
 Transform:
   m_ObjectHideFlags: 0
@@ -1326,7 +1492,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 768832489}
   m_HandleRect: {fileID: 768832488}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1810,7 +1976,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000015354, y: 0.00003145056}
+  m_AnchoredPosition: {x: -0.000015354, y: 0.000016836437}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1927692994

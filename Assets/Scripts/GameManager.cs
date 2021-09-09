@@ -47,13 +47,16 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Text _autoCollectInfo;
 
+    [Header("Golds")]
+    [SerializeField]
+    private double _totalGold;
 
     private List<ResourceController> _activeResources = new List<ResourceController>();
     private List<TapText> _tapTextPool = new List<TapText>();
     private float _collectSecond;
-    private double _totalGold;
 
     public double TotalGold => _totalGold;
+
 
     void Start()
     {
@@ -71,6 +74,8 @@ public class GameManager : MonoBehaviour
 
         CheckResourceCost();
 
+        AchievementController.Instance.SetAchievementReachedGolds(TotalGold);
+
         _coinIcon.transform.localScale = Vector3.LerpUnclamped(_coinIcon.transform.localScale, Vector3.one * 1.2f, 0.15f);
         _coinIcon.transform.Rotate(0f, 0f, Time.deltaTime * -100f);
     }
@@ -80,12 +85,15 @@ public class GameManager : MonoBehaviour
     {
         foreach (ResourceController resource in _activeResources)
         {
-            if (resource.IsUnlocked) 
-                isBuyable = TotalGold >= resource.GetUpgradeCost();
-            else
-                isBuyable = TotalGold >= resource.GetUnlockCost();
+            if (!resource.MaxLevel)
+            {
+                if (resource.IsUnlocked)
+                    isBuyable = TotalGold >= resource.GetUpgradeCost();
+                else
+                    isBuyable = TotalGold >= resource.GetUnlockCost();
 
-            resource.ResourceImage.sprite = ResourcesSprites[isBuyable ? 1 : 0];
+                resource.ResourceImage.sprite = ResourcesSprites[isBuyable ? 1 : 0];
+            }
         }
     }
 
