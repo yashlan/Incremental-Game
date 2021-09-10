@@ -172,12 +172,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475b9523759394e4ea806398626c289d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   _resourceDescription: {fileID: 3925074868392242015}
   _resourceUpgradeCost: {fileID: 3925074866538504338}
   _resourceUnlockCost: {fileID: 6804927424751155575}
   _resourceButton: {fileID: 742082525178269438}
   _resourceImage: {fileID: 3925074867743603679}
+  _defaultResourceSprite: {fileID: 21300000, guid: dce696515229b0a498c721e7e9818774,
+    type: 3}
   _level: 1
+  _maxLevel: 0
 --- !u!1 &3925074868392242013
 GameObject:
   m_ObjectHideFlags: 0

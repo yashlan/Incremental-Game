@@ -18,6 +18,8 @@ public class ResourceController : MonoBehaviour
     private Button _resourceButton;
     [SerializeField]
     private Image _resourceImage;
+    [SerializeField]
+    private Sprite _defaultResourceSprite;
 
     [Header("Level")]
     [SerializeField]
@@ -27,6 +29,7 @@ public class ResourceController : MonoBehaviour
 
     private ResourceConfig _config;
 
+    public int Level => _level;
     public Image ResourceImage => _resourceImage;
     public bool IsUnlocked { get; private set; }
     public bool MaxLevel => _maxLevel;
@@ -43,19 +46,19 @@ public class ResourceController : MonoBehaviour
         {
             case 1:
                 _maxLevel = _level >= 100;
-                setMaxLevel();
+                SetMaxLevel();
                 break;
             case 2:
                 _maxLevel = _level >= 100;
-                setMaxLevel();
+                SetMaxLevel();
                 break;
             case 3:
                 _maxLevel = _level >= 100;
-                setMaxLevel();
+                SetMaxLevel();
                 break;
             case 4:
                 _maxLevel = _level >= 100;
-                setMaxLevel();
+                SetMaxLevel();
                 break;
         }
     }
@@ -83,14 +86,15 @@ public class ResourceController : MonoBehaviour
         }
     }
 
-    void setMaxLevel()
+    void SetMaxLevel()
     {
         if (_maxLevel)
         {
             _resourceButton.interactable = false;
+            _resourceImage.sprite = _defaultResourceSprite;
             _resourceDescription.text = $"{ _config.Name } Lv. { _level }";
             _resourceUpgradeCost.text = "Max Level!";
-            _resourceImage.color = Color.red;
+            _resourceImage.color = new Color(0, 235, 255, 255);
         }
     }
 
